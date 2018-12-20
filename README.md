@@ -4,6 +4,14 @@
 
 The idea and original [source code](https://github.com/bnb/bitandbang/) created by Tierney Cyren ([@bitandbang](https://github.com/bnb)).
 
+# Prerequisites
+
+You need to [install graphicsmagick](https://github.com/IonicaBizau/image-to-ascii/blob/master/INSTALLATION.md), in order to install all the dependencies, or you will get the following error:
+
+```bash
+It seems like lwip failed to be intalled. Please check the errors.
+```
+
 # Usage
 
 ## Generate avatars
