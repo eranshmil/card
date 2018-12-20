@@ -7,10 +7,9 @@ const boxen = require('boxen');
 const fs = require('fs');
 const path = require('path');
 
-const avatarFilePath = path.join(
-  './assets',
-  process.argv.includes('--fg') ? 'avatar-fg.txt' : 'avatar.txt'
-);
+const isForeground = process.argv.includes('--fg');
+
+const avatarFilePath = path.join('./assets', isForeground ? 'avatar-fg.txt' : 'avatar.txt');
 
 // Define options for Boxen
 const boxenOptions = {
@@ -27,7 +26,7 @@ const data = {
   twitter: chalk.cyan('https://twitter.com/eranshmil'),
   github: chalk.cyan('https://github.com/eranshmil'),
   linkedin: chalk.cyan('https://linkedin.com/in/eranshmil'),
-  npx: chalk.white('npx @eranshmil/card'),
+  npx: chalk.white('npx @eranshmil/card ' + (process.argv[2] || '')),
   labelEmail: chalk.white.bold('   Email:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('   GitHub:'),

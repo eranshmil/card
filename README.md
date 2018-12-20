@@ -1,5 +1,7 @@
 ![The almighty card](https://raw.githubusercontent.com/eranshmil/card/master/assets/screenshot.jpg)
 
+![The almighty card](https://raw.githubusercontent.com/eranshmil/card/master/assets/screenshot-fg.jpg)
+
 The idea and original [source code](https://github.com/bnb/bitandbang/) created by Tierney Cyren ([@bitandbang](https://github.com/bnb)).
 
 # Usage
