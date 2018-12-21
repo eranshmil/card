@@ -1,6 +1,6 @@
 {
   "name": "@eranshmil/card",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "description": "A personal card for Eran Shmil (@eranshmil)",
   "bin": {
     "card": "./bin/card.js"
@@ -10,7 +10,7 @@
     "url": "https://github.com/eranshmil/card.git"
   },
   "scripts": {
-    "gen": "node ./bin/gen.js",
+    "gen": "node ./gen.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
