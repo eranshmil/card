@@ -4,25 +4,22 @@
 
 The idea and original [source code](https://github.com/bnb/bitandbang/) created by Tierney Cyren ([@bitandbang](https://github.com/bnb)).
 
-# Prerequisites
+# Changing avatars
 
-You need to [install graphicsmagick](https://github.com/IonicaBizau/image-to-ascii/blob/master/INSTALLATION.md), in order to install all the dependencies, or you will get the following error:
+1. Replace `./assets/avatar.png` with your own avatar.
+1. Run the command:
 
-```bash
-It seems like lwip failed to be intalled. Please check the errors.
-```
+   ```bash
+   npm run gen
+   ```
+
+- You need to [install graphicsmagick](https://github.com/IonicaBizau/image-to-ascii/blob/master/INSTALLATION.md), in order to install all the dependencies, or else you will get the following error:
+
+  ```bash
+  It seems like lwip failed to be intalled. Please check the errors.
+  ```
 
 # Usage
-
-## Generate avatars
-
-To avoid running image-to-ascii when running npx, I generated the avatars to txt files.
-
-```bash
-npm run gen
-```
-
-## Show the card
 
 Via npx:
 
