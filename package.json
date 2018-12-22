@@ -2,6 +2,9 @@
   "name": "@eranshmil/card",
   "version": "1.4.0",
   "description": "A personal card for Eran Shmil (@eranshmil)",
+  "author": "Eran Shmil <eranshmil@gmail.com>",
+  "license": "MIT",
+  "main": "/bin/card.js",
   "bin": {
     "card": "./bin/card.js"
   },
@@ -10,14 +13,26 @@
     "url": "https://github.com/eranshmil/card.git"
   },
   "scripts": {
-    "gen": "node ./gen.js",
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js && node ./bin/card.js --fg",
     "lint": "eslint \"**/*.js\"",
     "format": "prettier --write \"**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Eran Shmil <eranshmil@gmail.com>",
-  "license": "MIT",
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "files": [
+    "bin/card.js",
+    "bin/output",
+    "bin/output-fg"
+  ],
   "devDependencies": {
     "boxen": "^2.1.0",
     "chalk": "^2.4.1",
