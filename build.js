@@ -31,8 +31,8 @@ const imageToAscii = {
  * https://github.com/sindresorhus/boxen#api
  */
 const boxen = {
+  margin: 1,
   padding: 1,
-  float: 'center',
   borderStyle: 'round',
 };
 
