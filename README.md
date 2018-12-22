@@ -4,13 +4,17 @@
 
 The idea and original [source code](https://github.com/bnb/bitandbang/) created by Tierney Cyren ([@bitandbang](https://github.com/bnb)).
 
-# Changing avatars
+# Build
 
 1. Replace `./assets/avatar.png` with your own avatar.
+1. Change the card information and configurations in `build.js`.
 1. Run the command:
 
    ```bash
-   npm run gen
+   npm run build
+
+   // or just run
+   npm publish
    ```
 
 - You need to [install graphicsmagick](https://github.com/IonicaBizau/image-to-ascii/blob/master/INSTALLATION.md), in order to install all the dependencies, or else you will get the following error:
