@@ -15,12 +15,14 @@ const imageToAscii = require('image-to-ascii');
 function getCardTextTemplate(data) {
   return chalk`
     {green.bold ${data.name}}\n
-    {white.italic.bold ${data.work}}\n\n\n
-    {white.bold Email:}     {cyan ${data.email}}\n
-    {white.bold Twitter:}   {cyan ${data.twitter}}\n
-    {white.bold GitHub:}    {cyan ${data.github}}\n
-    {white.bold LinkedIn:}  {cyan ${data.linkedin}}\n\n\n\n
-    {white.bold Card:}      {white ${data.npx}}
+    {white.bold Work:}         {white ${data.work}}
+    {white.bold Open Source:}  {white ${data.os}}\n\n
+    {white.bold Twitter:}      {cyan ${data.twitter}}\n
+    {white.bold npm:}          {cyan ${data.email}}\n
+    {white.bold GitHub:}       {cyan ${data.github}}\n
+    {white.bold LinkedIn:}     {cyan ${data.linkedin}}\n
+    {white.bold Web:}          {cyan ${data.web}}\n\n
+    {white.bold Card:}         {white ${data.npx}}
     `.split('\n');
 }
 

@@ -1,16 +1,19 @@
 const path = require('path');
+const chalk = require('chalk');
 
 const generateCards = require('./card');
 
 const data = {
-  avatarFilePath: path.join(__dirname, 'assets/avatar.png'),
-  name: 'Eran Shmil',
-  work: 'Full-Stack Developer',
-  email: 'eranshmil@gmail.com',
-  twitter: 'https://twitter.com/eranshmil',
-  github: 'https://github.com/eranshmil',
-  linkedin: 'https://linkedin.com/in/eranshmil',
-  npx: 'npx @eranshmil/card [--fg]',
+  avatarFilePath: path.join(__dirname, 'assets', 'bnb.jpg'),
+  name: chalk`Tierney Cyren {white /} bitandbang`,
+  work: 'Senior Cloud Developer Advocate at Microsoft',
+  os: chalk`Node.js Community Committee {green ⬢}`,
+  email: 'https://npmjs.com/~bnb ',
+  twitter: 'https://twitter.com/bnb',
+  github: 'https://github.com/bnb',
+  linkedin: 'https://linkedin.com/in/bitandbang',
+  web: 'https://bnb.im',
+  npx: 'npx bitandbang',
 };
 
 /**
